@@ -1,6 +1,7 @@
 name: strong-frida build
 
 on:
+  workflow_dispatch:
   push:
     paths:
     - VERSION
