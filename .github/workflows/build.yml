@@ -128,7 +128,7 @@ jobs:
         git config --global user.name '${{ needs.release.outputs.user_name }}'
         git config --global user.email '${{ needs.release.outputs.user_email }}'
         export ANDROID_NDK_ROOT=${ANDROID_SDK_ROOT}/ndk-bundle
-        git clone --recurse-submodules https://github.com/frida/frida
+        git clone --recurse-submodules https://github.com/frida/frida/tree/14.2.18
         cd frida/frida-core
         git am ../../patch/frida-core/*.patch
         cd ../
