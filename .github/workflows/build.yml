@@ -9,7 +9,7 @@ on:
 jobs:
   release:
     runs-on: ubuntu-18.04
-    if: github.event_name == 'push'
+    if: github.event_name == 'workflow_dispatch'
 
     outputs:
       frida_version: ${{ steps.fridaVersion.outputs.frida_version }}
